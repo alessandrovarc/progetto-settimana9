@@ -1,5 +1,6 @@
 import NetflixGallery  from "./NetflixGallery";
 
+
 function NetflixHome() {
 
     return(

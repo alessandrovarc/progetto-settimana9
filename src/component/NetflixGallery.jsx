@@ -20,7 +20,7 @@ class NetflixGallery extends Component {
             }
           })
           .then((data) => {
-            console.log('film ottenuti', data);
+            //console.log('film ottenuti', data);
             this.setState({
               films: data.Search || [],
               isLoading: false,
@@ -36,24 +36,23 @@ class NetflixGallery extends Component {
       }
 
       componentDidMount() {
+        console.log("componentDidMount", this.state.films)
         this.fetchFilms();
       }
 
     render() {
-        console.log(this.state.films)
+        console.log("render", this.state.films)
 
         return(
             <>
-        <h4 className="text-white text-start">{this.props.title}</h4>
-        <div className="row row-cols-1 row-cols-sm-2 row-cols-lg-4 row-cols-xl-6 mb-4">
-
-            {this.state.films.slice(0, 6).map((film, i) => {
-                return (
-                    <NetflixMovie key={i} src={film.Poster}/>
-                );
-            })}
-
-        </div>
+                <h4 className="text-white text-start">{this.props.title}</h4>
+                <div className="row row-cols-1 row-cols-sm-2 row-cols-lg-4 row-cols-xl-6 mb-4 flex-nowrap mw-100 overflow-auto py-3 movies-container ">
+                    {this.state.films.map((film, i) => {
+                        return (
+                            <NetflixMovie key={i} src={film.Poster}/>
+                        );
+                    })}
+                </div>
             </>
         )
     }

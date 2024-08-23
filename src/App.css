@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background: #221f1f;
 }
 
 .App-logo {
@@ -96,4 +97,12 @@ footer {
 
 .col img:hover {
   transform: scale(1.1);
+}
+
+.movies-container::-webkit-scrollbar{
+    display: none;
+  }
+
+.movies-img {
+  height:300px;
 }

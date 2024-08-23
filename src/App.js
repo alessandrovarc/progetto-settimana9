@@ -11,11 +11,9 @@ function App() {
     <div className="App">
       <NetflixNav/>
       <main>
-        <NetflixHome/>
-
-      </main>
+      <NetflixHome/>
       <NetflixFooter/>
-
+      </main>
     </div>
   );
 }
