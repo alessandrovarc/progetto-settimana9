@@ -34,9 +34,9 @@ function NetflixHome() {
           </div>
         </div>
 
-        <NetflixGallery title="Trending Now" saga="pokemon" />
-        <NetflixGallery title="Watch it Again" saga="jurassic park"/>
-        <NetflixGallery title="New Releases" saga="digimon"/>
+        <NetflixGallery title="Trending Now" movie="pokemon" />
+        <NetflixGallery title="Watch it Again" movie="naruto"/>
+        <NetflixGallery title="New Releases" movie="digimon"/>
 
         </div>
         </>

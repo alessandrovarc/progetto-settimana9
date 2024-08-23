@@ -11,7 +11,7 @@ class NetflixGallery extends Component {
 
 
       fetchFilms = () => {
-        fetch("http://www.omdbapi.com/?apikey=a22eada7&s=" + this.props.saga)
+        fetch("http://www.omdbapi.com/?apikey=a22eada7&s=" + this.props.movie)
           .then((response) => {
             if (response.ok) {
               return response.json();
